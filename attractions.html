@@ -9,12 +9,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      main {
+        padding: 40px;
+        text-align: center;
+      }
+      /* Sub-navigation styling */
+      .subnav {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 40px 0;
+        flex-wrap: wrap;
+      }
+
+      .subnav-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #444;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        padding: 8px 14px;
+      }
+
+      .subnav-item:hover {
+        color: #00bfa5;
+        background-color: rgba(0, 191, 165, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .subnav-item.active {
+        color: #009688;
+        background-color: rgba(0, 150, 136, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 150, 136, 0.2);
+      }
+
+      /* Icon styling */
+      .subnav-item svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        fill: none;
+        transition: transform 0.3s ease;
+      }
+
+      .subnav-item:hover svg {
+        transform: scale(1.15);
+      }
+
+      /* Attraction boxes */
+      .attraction-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        padding: 20px;
+      }
+
+      .attraction-box {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        padding: 25px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .attraction-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <nav>
       <a href="index.html" class="logo">
         <img src="images/Taniti_Logo.png" alt="Taniti Island Logo" />
-        <span style="color:white;">TANITI</span>
+        <span style="color: white">TANITI</span>
       </a>
 
       <div class="nav-links">
@@ -26,7 +103,6 @@
       </div>
     </nav>
 
-
     <header class="page-hero attractions-hero">
       <div class="hero-text">
         <h1>Explore Taniti’s Wonders</h1>
@@ -34,26 +110,106 @@
       </div>
     </header>
 
-    <section>
-      <h2>Must-See Spots</h2>
-      <ul>
-        <li>
-          <strong>Mount Tura Volcano:</strong> Hike scenic trails and enjoy
-          panoramic island views.
-        </li>
-        <li>
-          <strong>Coral Reef Sanctuary:</strong> Dive into colorful underwater
-          worlds.
-        </li>
-        <li>
-          <strong>Rainforest Falls:</strong> Explore lush jungle paths and
-          hidden waterfalls.
-        </li>
-      </ul>
-    </section>
+    <main style="padding-top: 0px">
+      <h1>Discover Taniti’s Attractions</h1>
 
-    <footer>
-      <p>© 2025 Taniti Tourism Board</p>
-    </footer>
+      <div class="subnav">
+        <div class="subnav-item active" data-category="all">
+          <!-- Compass icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <polygon points="12,8 16,12 12,16 8,12" />
+          </svg>
+          All Activities
+        </div>
+        <div class="subnav-item" data-category="nature">
+          <!-- Mountain icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 20l9-16 9 16H3zM9 14l3-5 3 5H9z" />
+          </svg>
+          Nature & Adventure
+        </div>
+        <div class="subnav-item" data-category="water">
+          <!-- Wave icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M2 17c3-2 5-3 8-3s5 1 8 3 6 2 6 2H2zM2 12c3-2 5-3 8-3s5 1 8 3 6 2 6 2H2z"
+            />
+          </svg>
+          Water Activities
+        </div>
+        <div class="subnav-item" data-category="culture">
+          <!-- Tribal mask icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2c-5 0-9 4-9 9s4 11 9 11 9-6 9-11-4-9-9-9zm0 3c2 0 4 2 4 4H8c0-2 2-4 4-4zm0 12a5 5 0 01-5-5h10a5 5 0 01-5 5z"
+            />
+          </svg>
+          Culture & Entertainment
+        </div>
+      </div>
+
+      <div class="attraction-grid">
+        <div class="attraction-box all nature">
+          <h3>Rainforest Hike</h3>
+          <p>
+            Explore lush trails and hidden waterfalls deep in Taniti’s vibrant
+            jungle.
+          </p>
+        </div>
+        <div class="attraction-box all water">
+          <h3>Coral Reef Snorkeling</h3>
+          <p>
+            Discover the underwater beauty of Taniti’s coral reefs and tropical
+            fish.
+          </p>
+        </div>
+        <div class="attraction-box all culture">
+          <h3>Island Festival</h3>
+          <p>
+            Experience traditional music, dance, and food at Taniti’s cultural
+            festival.
+          </p>
+        </div>
+        <div class="attraction-box all nature">
+          <h3>Mountain Zipline</h3>
+          <p>
+            Soar through the tropical canopy for an unforgettable adrenaline
+            rush.
+          </p>
+        </div>
+        <div class="attraction-box all water">
+          <h3>Lagoon Kayaking</h3>
+          <p>Glide across tranquil waters and discover hidden island coves.</p>
+        </div>
+        <div class="attraction-box all culture">
+          <h3>Historic Village Tour</h3>
+          <p>
+            Learn about ancient Tanitian traditions and local craftsmanship.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const items = document.querySelectorAll(".subnav-item");
+      const boxes = document.querySelectorAll(".attraction-box");
+
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          items.forEach((i) => i.classList.remove("active"));
+          item.classList.add("active");
+          const category = item.getAttribute("data-category");
+
+          boxes.forEach((box) => {
+            if (category === "all" || box.classList.contains(category)) {
+              box.classList.remove("hidden");
+            } else {
+              box.classList.add("hidden");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
