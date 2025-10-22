@@ -9,83 +9,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      main {
-        padding: 40px;
-        text-align: center;
-      }
-      /* Sub-navigation styling */
-      .subnav {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        margin: 40px 0;
-        flex-wrap: wrap;
-      }
-
-      .subnav-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-        font-weight: 600;
-        color: #444;
-        transition: all 0.3s ease;
-        border-radius: 8px;
-        padding: 8px 14px;
-      }
-
-      .subnav-item:hover {
-        color: #00bfa5;
-        background-color: rgba(0, 191, 165, 0.1);
-        transform: translateY(-2px);
-      }
-
-      .subnav-item.active {
-        color: #009688;
-        background-color: rgba(0, 150, 136, 0.1);
-        box-shadow: 0 2px 5px rgba(0, 150, 136, 0.2);
-      }
-
-      /* Icon styling */
-      .subnav-item svg {
-        width: 22px;
-        height: 22px;
-        stroke: currentColor;
-        stroke-width: 1.8;
-        fill: none;
-        transition: transform 0.3s ease;
-      }
-
-      .subnav-item:hover svg {
-        transform: scale(1.15);
-      }
-
-      /* Attraction boxes */
-      .attraction-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-        padding: 20px;
-      }
-
-      .attraction-box {
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-        padding: 25px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-      }
-
-      .attraction-box:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      }
-
-      .hidden {
-        display: none;
-      }
-    </style>
+   <script
+      src="https://kit.fontawesome.com/6dafa92a94.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
@@ -190,6 +117,14 @@
         </div>
       </div>
     </main>
+    <footer>
+      <p>© 2025 Taniti Tourism Board</p>
+      <div class="social-icons">
+        <a href="http://www.facebook.com" class="fa-brands fa-facebook" style="text-decoration: none;"></a>
+        <a href="http://www.instagram.com" class="fa-brands fa-instagram" style="text-decoration: none;"></a>
+        <a href="http://youtube.com" class="fa-brands fa-youtube" style="text-decoration: none;"></a>
+      </div>
+    </footer>
 
     <script>
       const items = document.querySelectorAll(".subnav-item");
