@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Taniti Island</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript">
+      function toggle(tag) {
+        var x = document.getElementsByName(tag)[0];
+        var a = x.parentNode;
+        if (a.style.display == "block") {
+          a.style.display = "none";
+        } else {
+          a.style.display = "block";
+        }
+      }
+
+      function init() {
+        //this function will add show hide functionality to paired list items,
+        //as long as the answer is a list item straight after the question list item.
+        //You can also have as many separate lists as you want.
+        //all lists must be contained within a div with id QA
+
+        var obj = document.getElementById("QA");
+        var elements = obj.getElementsByTagName("li");
+        var index = 1;
+        //add javascript to question elements
+        //you could also add styling to question elements here
+        for (var i = 0; i < elements.length; i += 2) {
+          var element = elements[i];
+          element.innerHTML =
+            "<a href='javascript:toggle(" +
+            index +
+            ")'>" +
+            element.innerHTML +
+            "</a>";
+          index = index + 1;
+        }
+        //add bookmark to answer elements and add styling
+        var index = 1;
+        for (var i = 1; i < elements.length; i += 2) {
+          var element = elements[i];
+          element.innerHTML =
+            "<a name='" +
+            index +
+            "' id='" +
+            index +
+            "'></a>" +
+            element.innerHTML;
+          index = index + 1;
+          element.style.padding = "0px 0px 10px 20px"; //add indent to answer
+          element.style.listStyleType = "none"; //remove bullet
+          element.style.display = "none"; //hide answer element
+        }
+      }
+
+      window.onload = init;
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="images/Taniti_Logo.png" alt="Taniti Island Logo" />
+        <span style="color:white;">TANITI</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="dining.html">Dining</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="transportation.html">Transportation</a>
+      </div>
+    </nav>
+
+    <!-- Fullscreen Background Video -->
+    <video autoplay muted loop id="bg-video" width="100%" height="50%">
+      <source
+        src="https://www.pexels.com/download/video/3089895/"
+        type="video/mp4"
+      />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="container home-hero">
+      <header>
+        <h1>Welcome to Taniti Island</h1>
+        <p style="color: white">Your tropical adventure awaits.</p>
+      </header>
+
+      <section>
+        <h2>Discover Paradise</h2>
+        <p>
+          Taniti is a hidden gem in the Pacific — a land of sunshine, adventure,
+          and vibrant culture. From crystal-clear waters and lush jungles to
+          world-class cuisine, every moment on Taniti is a postcard come to
+          life.
+        </p>
+        <p>
+          Plan your escape to paradise and experience the warmth of Taniti’s
+          people and the magic of its landscapes.
+        </p>
+      </section>
+
+      <section>
+        <h2>FREQUENTLY ASKED QUESITONS</h2>
+
+        <div id="QA">
+          <ul>
+            <li>Do I need to buy a plug adapter for my electronics?</li>
+            <li>
+              Power outlets are 120 volts (the same as in the United States).
+            </li>
+            <li>Is there a language barrier?</li>
+            <li>
+              Many younger Tanitians speak fluent English. Very little English
+              is spoken in rural areas, especially by the older residents.
+            </li>
+            <li>What is the currency on the island?</li>
+            <li>
+              Taniti uses the U.S. dollar as its currency, but many businesses
+              will also accept euros and yen. Several banks facilitate currency
+              exchange, and many businesses accept major credit cards.
+            </li>
+            <li>Is there a legal drinking age?</li>
+            <li>
+              Alcohol is not allowed to be served or sold between the hours of
+              midnight and 9:00 a.m. The drinking age on Taniti is 18 and the
+              drinking age is not strictly enforced.
+            </li>
+            <li>If I need medical attention, what are my options?</li>
+            <li>
+              There is one hospital and several clinics. The hospital has many
+              multilingual employees.
+            </li>
+            <li>What is crime like on the island?</li>
+            <li>
+              Violent crime is very rare on Taniti, but as tourism increases,
+              there are more reports of pickpocketing and other petty crimes.
+            </li>
+            <li>
+              Does Taniit have holidays I should be aware of for closings?
+            </li>
+            <li>
+              Taniti enjoys a large number of national holidays, and many
+              tourist attractions and restaurants will be closed on holidays, so
+              visitors should plan accordingly.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2025 Taniti Tourism Board | Explore Paradise Responsibly</p>
+    </footer>
+  </body>
+</html>
