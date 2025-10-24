@@ -1,62 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taniti - Lodging</title>
-  <link rel="stylesheet" href="style.css" />
-  <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti - Lodging</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
       src="https://kit.fontawesome.com/6dafa92a94.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-  <nav>
+  </head>
+  <body>
+    <nav>
       <a href="index.html" class="logo">
         <img src="images/Taniti_Logo.png" alt="Taniti Island Logo" />
-        <span style="color:white;">TANITI</span>
+        <span style="color: white">TANITI</span>
       </a>
 
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="lodging.html">Lodging</a>
+        <a href="lodging.html" style="text-decoration: underline">Lodging</a>
         <a href="dining.html">Dining</a>
         <a href="attractions.html">Attractions</a>
         <a href="transportation.html">Transportation</a>
       </div>
     </nav>
 
-  <!-- Hero Header Section -->
-  <header class="page-hero lodging-hero">
-  <div class="hero-text">
-    <h1>Relax in Taniti’s Finest Lodging</h1>
-    <p>From luxury resorts to seaside bungalows, comfort awaits you.</p>
-  </div>
-</header>
+    <!-- Hero Header Section -->
+    <header class="page-hero lodging-hero">
+      <div class="hero-text">
+        <h1>Relax in Taniti’s Finest Lodging</h1>
+        <p>From luxury resorts to seaside bungalows, comfort awaits you.</p>
+      </div>
+    </header>
 
-  <!-- Page Content -->
-  <section class="content">
-    <h2>Accommodations for Every Traveler</h2>
-    <p>
-      Whether you prefer five-star hotels with ocean views or cozy family-run
-      inns nestled in the hills, Taniti offers a variety of lodging options to
-      fit your needs. Enjoy modern amenities, warm island hospitality, and easy
-      access to beaches and attractions.
-    </p>
-    <p>
-      Popular stays include Taniti Beach Resort, Yellow Leaf Bay Villas, and the
-      eco-friendly Banyan Tree Bungalows.
-    </p>
-  </section>
+    <!-- Page Content -->
+    <section class="content">
+      <h2>Accommodations for Every Traveler</h2>
+      <p>
+        Taniti has a wide variety of lodging that ranges from an inexpensive
+        hostel to one large, four-star resort. There are many small,
+        family-owned hotels and a growing number of bed and breakfasts. All
+        types of lodging are strictly regulated and regularly inspected by the
+        Tanitian government.
+      </p>
+    </section>
 
-      <footer>
+    <section class="lodging-categories">
+      <div class="lodging-box">
+       
+        <i class="fas fa-umbrella-beach"></i>
+     
+        <h3>Resorts</h3>
+        <p>
+          Enjoy full-service luxury at Taniti’s seaside resorts. Relax by
+          infinity pools, savor fine dining, and soak in breathtaking ocean
+          views.
+        </p>
+        <button class="learn-more" data-modal="resortsModal">
+          View Resorts
+        </button>
+      </div>
+
+      <div class="lodging-box">
+       
+        <i class="fas fa-home"></i>
+      
+        <h3>Bed & Breakfasts</h3>
+        <p>
+          Experience Taniti’s hospitality in charming bed and breakfasts
+          offering homemade meals and authentic island comfort.
+        </p>
+        <button class="learn-more" data-modal="bnbModal">View B&Bs</button>
+      </div>
+
+      <div class="lodging-box">
+        
+        <i class="fas fa-key"></i>
+        
+        <h3>Private Vacation Rentals</h3>
+        <p>
+          Find your own tropical retreat with private rentals perfect for
+          families, groups, or romantic getaways — comfort and privacy combined.
+        </p>
+        <button class="learn-more" data-modal="rentalsModal">
+          View Rentals
+        </button>
+      </div>
+
+      <div class="lodging-box">
+        
+        <i class="fas fa-bed"></i>
+        
+        <h3>Hostels</h3>
+        <p>
+          Stay at the island’s friendly hostels, where budget travelers can meet
+          fellow adventurers and enjoy a vibrant, community-focused atmosphere.
+        </p>
+        <button class="learn-more" data-modal="hostelModal">
+          View Hostels
+        </button>
+      </div>
+    </section>
+
+    <!-- Resort Modal -->
+    <div id="resortsModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Resorts in Taniti</h2>
+        <ul>
+          <li>
+            🌺 Paradise Sands Resort — The islands <b>only</b> four star resort
+            with full spa, fine dining & tropical gardens
+          </li>
+          <li>🏖️ Coral Bay Resort — Oceanfront luxury with infinity pools</li>
+          <li>🌅 Sunset Reef Villas — Private villas with sea-view terraces</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B&B Modal -->
+    <div id="bnbModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Bed & Breakfasts</h2>
+        <ul>
+          <li>🏡 Island Haven B&B — Cozy rooms, fresh local breakfast</li>
+          <li>🌿 The Mango Tree Inn — Surrounded by lush gardens</li>
+          <li>🍍 Taniti Charm House — Homey comfort near downtown</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hostel Modal -->
+    <div id="hostelModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Hostels</h2>
+        <ul>
+          <li>🏡 Blue Horizon Hostel — Cozy rooms, fresh local breakfast</li>
+          <li>🌿 Wavebreak Hostel — Surrounded by lush gardens</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rentals Modal -->
+    <div id="rentalsModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Private Vacation Rentals</h2>
+        <ul>
+          <li>🌴 Oceanview Escape — Private villa with pool</li>
+          <li>🏠 Beachside Cottage — Steps away from the sand</li>
+          <li>🌞 Sunset Loft — Modern apartment with terrace view</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
       <p>© 2025 Taniti Tourism Board</p>
       <div class="social-icons">
-        <a href="http://www.facebook.com" class="fa-brands fa-facebook" style="text-decoration: none;"></a>
-        <a href="http://www.instagram.com" class="fa-brands fa-instagram" style="text-decoration: none;"></a>
-        <a href="http://youtube.com" class="fa-brands fa-youtube" style="text-decoration: none;"></a>
+        <a
+          href="http://www.facebook.com"
+          class="fa-brands fa-facebook"
+          style="text-decoration: none"
+        ></a>
+        <a
+          href="http://www.instagram.com"
+          class="fa-brands fa-instagram"
+          style="text-decoration: none"
+        ></a>
+        <a
+          href="http://youtube.com"
+          class="fa-brands fa-youtube"
+          style="text-decoration: none"
+        ></a>
       </div>
     </footer>
-</body>
-</html>
 
+    <script>
+      // Modal functionality
+      const modals = document.querySelectorAll(".modal");
+      const buttons = document.querySelectorAll(".learn-more");
+      const closes = document.querySelectorAll(".close");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const modalId = btn.getAttribute("data-modal");
+          document.getElementById(modalId).style.display = "flex";
+        });
+      });
+
+      closes.forEach((close) => {
+        close.addEventListener("click", () => {
+          close.closest(".modal").style.display = "none";
+        });
+      });
+
+      window.addEventListener("click", (e) => {
+        modals.forEach((modal) => {
+          if (e.target === modal) modal.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>

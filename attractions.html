@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-   <script
+    <script
       src="https://kit.fontawesome.com/6dafa92a94.js"
       crossorigin="anonymous"
     ></script>
@@ -25,7 +25,9 @@
         <a href="index.html">Home</a>
         <a href="lodging.html">Lodging</a>
         <a href="dining.html">Dining</a>
-        <a href="attractions.html">Attractions</a>
+        <a href="attractions.html" style="text-decoration: underline"
+          >Attractions</a
+        >
         <a href="transportation.html">Transportation</a>
       </div>
     </nav>
@@ -37,8 +39,16 @@
       </div>
     </header>
 
-    <main style="padding-top: 0px">
-      <h1>Discover Taniti’s Attractions</h1>
+    <section
+      style="
+        padding-top: 0px;
+        color: #00796b;
+        text-align: center;
+        padding-left: 10px;
+      "
+    >
+      <h2 style=" border:none;
+        border-radius: 0px; padding-top:10px;">Discover Taniti’s Attractions</h2>
 
       <div class="subnav">
         <div class="subnav-item active" data-category="all">
@@ -75,54 +85,359 @@
           Culture & Entertainment
         </div>
       </div>
+    </section>
 
+    <section class="attraction-section">
       <div class="attraction-grid">
         <div class="attraction-box all nature">
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <h3>Beaches</h3>
+          <p>
+            Enjoy white sandy beaches and crystal-clear waters perfect for
+            relaxation and water sports in Yellow Leaf Bay.
+          </p>
+        </div>
+
+        <div class="attraction-box all nature">
+          <i class="fas fa-hiking"></i>
           <h3>Rainforest Hike</h3>
           <p>
             Explore lush trails and hidden waterfalls deep in Taniti’s vibrant
             jungle.
           </p>
         </div>
+
+        <div class="attraction-box all culture">
+          <i class="fa-solid fa-golf-ball-tee"></i>
+          <h3>Golfing</h3>
+          <p>
+            Get ready to tee off on the island’s soon-to-open nine-hole golf
+            course, offering stunning views and a relaxing game for all skill
+            levels.
+          </p>
+        </div>
+
         <div class="attraction-box all water">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="#008080"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Fishing rod -->
+            <line
+              x1="10"
+              y1="50"
+              x2="50"
+              y2="10"
+              stroke="#008080"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+
+            <!-- Fishing line -->
+            <line
+              x1="50"
+              y1="10"
+              x2="54"
+              y2="30"
+              stroke="#008080"
+              stroke-width="3"
+              stroke-dasharray="2,2"
+            />
+
+            <!-- Fish -->
+            <ellipse cx="64" cy="40" rx="8" ry="4" fill="#008080" />
+            <polygon points="58,30 54,28 54,32" fill="#008080" />
+          </svg>
+
+          <h3>Chartered Fishing Tour</h3>
+          <p>
+            Set out on a private fishing adventure around the island’s pristine
+            waters.
+          </p>
+        </div>
+
+        <div class="attraction-box all water">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="74"
+            height="74"
+            viewBox="0 0 3001 3001"
+          >
+            <path
+              fill-rule="nonzero"
+              fill="#008080"
+              fill-opacity="1"
+              d="M 773.691406 1418.339844 L 847.957031 1418.339844 L 886.824219 1273.28125 L 886.824219 1201.878906 C 886.824219 1189.328125 897.003906 1179.160156 909.554688 1179.160156 L 1086.761719 1179.160156 L 1087.351562 1179.148438 L 1087.929688 1179.160156 L 1308.691406 1179.160156 L 1309.269531 1179.148438 L 1309.859375 1179.160156 L 1521.570312 1179.160156 C 1534.121094 1179.160156 1544.300781 1189.328125 1544.300781 1201.878906 L 1544.300781 1270.179688 L 1629.851562 1418.339844 L 1854.078125 1418.339844 L 1882.109375 1351.488281 C 1885.179688 1342.570312 1893.648438 1336.171875 1903.601562 1336.171875 L 2228.308594 1336.171875 L 2228.308594 1336.210938 C 2231.210938 1336.199219 2234.160156 1336.761719 2237.011719 1337.949219 C 2248.578125 1342.75 2254.058594 1356.03125 2249.261719 1367.601562 L 2215.351562 1448.480469 C 2215.03125 1449.398438 2214.660156 1450.28125 2214.238281 1451.148438 L 2097.460938 1729.679688 C 2097.171875 1730.480469 2096.839844 1731.261719 2096.480469 1732.011719 L 2078.289062 1775.390625 L 2161.75 1775.390625 C 2174.300781 1775.390625 2184.480469 1785.570312 2184.480469 1798.121094 C 2184.480469 1810.671875 2174.300781 1820.851562 2161.75 1820.851562 L 805.796875 1820.851562 C 793.246094 1820.851562 783.066406 1810.671875 783.066406 1798.121094 C 783.066406 1785.570312 793.246094 1775.390625 805.796875 1775.390625 L 889.269531 1775.390625 L 871.113281 1732.078125 C 870.71875 1731.289062 870.363281 1730.449219 870.070312 1729.601562 L 752.742188 1449.769531 C 747.933594 1438.199219 753.417969 1424.921875 764.988281 1420.121094 C 767.835938 1418.929688 770.785156 1418.371094 773.691406 1418.378906 Z M 894.957031 1418.339844 L 1365.21875 1418.339844 L 1296.261719 1298.890625 L 926.964844 1298.890625 Z M 1417.488281 1418.339844 L 1577.46875 1418.339844 L 1508.511719 1298.890625 L 1348.53125 1298.890625 Z M 1903.28125 1418.339844 L 2022.179688 1418.339844 L 2037.570312 1381.628906 L 1918.671875 1381.628906 Z M 2071.378906 1418.339844 L 2178.789062 1418.339844 L 2194.179688 1381.628906 L 2086.769531 1381.628906 Z M 2029.089844 1775.390625 L 2041.898438 1744.820312 L 925.65625 1744.820312 L 938.472656 1775.390625 Z M 932.285156 1253.429688 L 1064.621094 1253.429688 L 1064.621094 1224.609375 L 932.285156 1224.609375 Z M 1110.078125 1253.429688 L 1286.539062 1253.429688 L 1286.539062 1224.609375 L 1110.078125 1224.609375 Z M 1332 1253.429688 L 1498.839844 1253.429688 L 1498.839844 1224.609375 L 1332 1224.609375 L 1332 1253.429688 "
+            />
+          </svg>
+          <h3>Boat Tour</h3>
+          <p>
+            Discover the island’s hidden coves and sparkling coastline on an
+            unforgettable boat tour through pristine waters."
+          </p>
+        </div>
+
+        <div class="attraction-box all water">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="#008080"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Snorkel tube -->
+            <path
+              d="M48 8 C48 0, 40 0, 40 8 L40 28"
+              stroke="#008080"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <!-- Snorkel mask -->
+            <rect
+              x="16"
+              y="20"
+              width="24"
+              height="12"
+              rx="3"
+              stroke="#008080"
+              stroke-width="5"
+              fill="none"
+            />
+            <!-- Face outline -->
+            <circle
+              cx="28"
+              cy="26"
+              r="6"
+              stroke="#008080"
+              stroke-width="3"
+              fill="none"
+            />
+            <!-- Mouthpiece -->
+            <line
+              x1="40"
+              y1="28"
+              x2="44"
+              y2="32"
+              stroke="#008080"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+
           <h3>Coral Reef Snorkeling</h3>
           <p>
             Discover the underwater beauty of Taniti’s coral reefs and tropical
             fish.
           </p>
         </div>
-        <div class="attraction-box all culture">
-          <h3>Island Festival</h3>
-          <p>
-            Experience traditional music, dance, and food at Taniti’s cultural
-            festival.
-          </p>
-        </div>
+
         <div class="attraction-box all nature">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="#008080"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Zipline cable -->
+            <line
+              x1="4"
+              y1="8"
+              x2="60"
+              y2="56"
+              stroke="#008080"
+              stroke-width="4"
+            />
+
+            <!-- Pulley -->
+            <circle cx="32" cy="32" r="3" fill="#008080" />
+
+            <!-- Person -->
+            <!-- Head -->
+            <circle cx="32" cy="36" r="5" fill="#008080" />
+            <!-- Body -->
+            <line
+              x1="32"
+              y1="40"
+              x2="32"
+              y2="50"
+              stroke="#008080"
+              stroke-width="4"
+            />
+            <!-- Arms holding cable -->
+            <line
+              x1="32"
+              y1="42"
+              x2="38"
+              y2="38"
+              stroke="#008080"
+              stroke-width="4"
+            />
+            <line
+              x1="32"
+              y1="42"
+              x2="46"
+              y2="38"
+              stroke="#008080"
+              stroke-width="4"
+            />
+            <!-- Legs -->
+            <line
+              x1="32"
+              y1="50"
+              x2="28"
+              y2="66"
+              stroke="#008080"
+              stroke-width="4"
+            />
+            <line
+              x1="32"
+              y1="50"
+              x2="36"
+              y2="66"
+              stroke="#008080"
+              stroke-width="4"
+            />
+          </svg>
+
           <h3>Mountain Zipline</h3>
           <p>
             Soar through the tropical canopy for an unforgettable adrenaline
             rush.
           </p>
         </div>
+        <div class="attraction-box all nature">
+          <i class="fa-solid fa-fire"></i>
+          <i class="fa-solid fa-mountain"></i>
+          <h3>Active Volcano Tour</h3>
+          <p>Experience the thrill of adventure on an active volcano hike!</p>
+        </div>
+
+        <div class="attraction-box all culture">
+          <i class="fa-solid fa-palette"></i>
+          <h3>Art Gallery</h3>
+          <p>
+            Explore the island’s vibrant art scene at the local gallery,
+            showcasing works by talented regional artists.
+          </p>
+        </div>
+
+        <div class="attraction-box all culture">
+          <i class="fa-solid fa-museum"></i>
+          <h3>History Museum</h3>
+          <p>
+            Step back in time and explore the island’s rich history through
+            fascinating exhibits at the local history museum.
+          </p>
+        </div>
+
+        <div class="attraction-box all culture">
+          <i class="fa-solid fa-beer"></i>
+          <h3>Local Pubs</h3>
+          <p>
+            Discover the island’s charm through its cozy local pubs and savor
+            unique flavors at the brand-new microbrewery offering craft beers
+            made on the island.
+          </p>
+        </div>
+
+        <div class="attraction-box all culture">
+          <i class="fa-solid fa-martini-glass"></i>
+          <h3>Dance Club</h3>
+          <p>
+            Experience island nightlife like never before at the brand-new dance
+            club, where music and energy keep the party going all night.
+          </p>
+        </div>
+
+        <div class="attraction-box all nature">
+          <i class="fa-solid fa-helicopter"></i>
+          <h3>Helicopter Tours</h3>
+          <p>
+            Soar above the island’s untouched landscapes on an exhilarating
+            helicopter tour.
+          </p>
+        </div>
+
+        <div class="attraction-box all nature">
+          <i class="fa-solid fa-bus"></i>
+          <h3>Bus Tours</h3>
+          <p>
+            Explore the island’s hidden gems comfortably on a guided bus tour.
+          </p>
+        </div>
+
         <div class="attraction-box all water">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="#008080"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Left blade -->
+            <rect x="6" y="28" width="12" height="8" rx="5" fill="#008080" />
+            <!-- Shaft -->
+            <line
+              x1="18"
+              y1="32"
+              x2="46"
+              y2="32"
+              stroke="#008080"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <!-- Right blade -->
+            <rect x="46" y="28" width="12" height="8" rx="5" fill="#008080" />
+          </svg>
+
           <h3>Lagoon Kayaking</h3>
           <p>Glide across tranquil waters and discover hidden island coves.</p>
         </div>
+
         <div class="attraction-box all culture">
-          <h3>Historic Village Tour</h3>
+          <i class="fa-solid fa-film"></i>
+          <i class="fa-solid fa-gamepad"></i>
+          <h3>Movies & Arcade</h3>
           <p>
-            Learn about ancient Tanitian traditions and local craftsmanship.
+            Enjoy a fun-filled evening on the island, whether catching the
+            latest movie or challenging friends at the local arcade."
+          </p>
+        </div>
+
+        <div class="attraction-box all culture">
+          <i class="fa-solid fa-bowling-ball"></i>
+          <h3>Bowling</h3>
+          <p>
+            Strike up some fun at the island’s bowling alley, perfect for a
+            relaxed evening with friends and family.
           </p>
         </div>
       </div>
-    </main>
+    </section>
+
     <footer>
       <p>© 2025 Taniti Tourism Board</p>
       <div class="social-icons">
-        <a href="http://www.facebook.com" class="fa-brands fa-facebook" style="text-decoration: none;"></a>
-        <a href="http://www.instagram.com" class="fa-brands fa-instagram" style="text-decoration: none;"></a>
-        <a href="http://youtube.com" class="fa-brands fa-youtube" style="text-decoration: none;"></a>
+        <a
+          href="http://www.facebook.com"
+          class="fa-brands fa-facebook"
+          style="text-decoration: none"
+        ></a>
+        <a
+          href="http://www.instagram.com"
+          class="fa-brands fa-instagram"
+          style="text-decoration: none"
+        ></a>
+        <a
+          href="http://youtube.com"
+          class="fa-brands fa-youtube"
+          style="text-decoration: none"
+        ></a>
       </div>
     </footer>
 

@@ -18,18 +18,17 @@
     <nav>
       <a href="index.html" class="logo">
         <img src="images/Taniti_Logo.png" alt="Taniti Island Logo" />
-        <span style="color:white;">TANITI</span>
+        <span style="color: white">TANITI</span>
       </a>
 
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="lodging.html">Lodging</a>
-        <a href="dining.html">Dining</a>
+        <a href="dining.html" style="text-decoration: underline">Dining</a>
         <a href="attractions.html">Attractions</a>
         <a href="transportation.html">Transportation</a>
       </div>
     </nav>
-
 
     <header class="page-hero dining-hero">
       <div class="hero-text">
@@ -38,31 +37,196 @@
       </div>
     </header>
 
-    <section>
-      <h2>Top Restaurants</h2>
-      <ul>
-        <li>
-          <strong>Ocean Breeze Café:</strong> Seafood and smoothies by the
-          beach.
-        </li>
-        <li>
-          <strong>Island Flame:</strong> Authentic Tanitian cuisine with live
-          music.
-        </li>
-        <li>
-          <strong>Green Leaf Eatery:</strong> Vegan-friendly menu with tropical
-          garden views.
-        </li>
-      </ul>
+    <section class="content">
+      <h2>Dining in Taniti</h2>
+      <p>
+        Whether you're craving freshly caught seafood, international flavors, or
+        everyday essentials, Taniti offers a wide range of dining and shopping
+        options to satisfy every taste.
+      </p>
     </section>
 
-     <footer>
-      <p>© 2025 Taniti Tourism Board</p>
+    <!-- Restaurants -->
+    <section class="dining-section">
+      <h2>Restaurants</h2>
+      <div class="dining-grid">
+        <div class="dining-box">
+          <i class="fas fa-fish"></i>
+          <h3>Local Fish</h3>
+          <p>
+            Enjoy Taniti’s famous freshly caught fish dishes — grilled, steamed,
+            or prepared island-style with tropical spices.
+          </p>
+          <button class="learn-more" data-modal="fishModal">
+            View Options
+          </button>
+        </div>
+
+        <div class="dining-box">
+          <i class="fas fa-utensils"></i>
+          <h3>American</h3>
+          <p>
+            Find comforting favorites from burgers and fries to family-friendly
+            diners, all with an island twist.
+          </p>
+          <button class="learn-more" data-modal="americanModal">
+            View Options
+          </button>
+        </div>
+
+        <div class="dining-box">
+          <i class="fas fa-bowl-rice"></i>
+          <h3>Pan-Asian</h3>
+          <p>
+            Experience the vibrant fusion of Asian flavors — from Japanese sushi
+            to Thai curries and Hawaiian poke bowls.
+          </p>
+          <button class="learn-more" data-modal="asianModal">
+            View Options
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grocery Stores -->
+    <section class="dining-section">
+      <h2>Grocery Stores</h2>
+      <div class="dining-grid">
+        <div class="dining-box">
+          <i class="fas fa-shopping-basket"></i>
+          <h3>Supermarkets</h3>
+          <p>
+            Stock up on fresh produce, snacks, and local ingredients at Taniti’s
+            full-service supermarkets.
+          </p>
+          <button class="learn-more" data-modal="supermarketModal">
+            View Locations
+          </button>
+        </div>
+
+        <div class="dining-box">
+          <i class="fas fa-apple-alt"></i>
+          <h3>Local Grocery Stores</h3>
+          <p>
+            Support small island grocers offering organic produce, tropical
+            fruits, and traditional Tanitian staples.
+          </p>
+          <button class="learn-more" data-modal="groceryModal">
+            View Locations
+          </button>
+        </div>
+
+        <div class="dining-box">
+          <i class="fas fa-store"></i>
+          <h3>Convenience Store</h3>
+          <p>
+            Quickly grab essentials, snacks, or drinks at the island's only
+            convenience store, <b>Tikimart Express</b>. Open 24hrs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Visit Taniti Island</p>
       <div class="social-icons">
-        <a href="http://www.facebook.com" class="fa-brands fa-facebook" style="text-decoration: none;"></a>
-        <a href="http://www.instagram.com" class="fa-brands fa-instagram" style="text-decoration: none;"></a>
-        <a href="http://youtube.com" class="fa-brands fa-youtube" style="text-decoration: none;"></a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+          ><i class="fab fa-youtube"></i
+        ></a>
       </div>
     </footer>
+
+    <!-- MODALS -->
+    <div id="fishModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Local Fish Restaurants</h2>
+        <ul>
+          <li>Ocean Breeze Grill</li>
+          <li>The Dockside Catch</li>
+          <li>Lagoon’s Edge Seafood Bar</li>
+          <li>Coral Catch Grill</li>
+          <li>The Driftwood Fish House</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="americanModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>American Dining</h2>
+        <ul>
+          <li>Island Diner</li>
+          <li>Coral Coast BBQ</li>
+          <li>Tropic Burger & Shake</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="asianModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pan-Asian Dining</h2>
+        <ul>
+          <li>Lotus Bay Sushi</li>
+          <li>Golden Pineapple Ramen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="supermarketModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Supermarkets</h2>
+        <ul>
+          <li>Taniti Fresh Market</li>
+          <li>Island Choice Superstore</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="groceryModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Local Grocery Stores</h2>
+        <ul>
+          <li>Sunrise Grocers</li>
+          <li>Coral Foods</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      // Modal functionality
+      const modals = document.querySelectorAll(".modal");
+      const buttons = document.querySelectorAll(".learn-more");
+      const closes = document.querySelectorAll(".close");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const modalId = btn.getAttribute("data-modal");
+          document.getElementById(modalId).style.display = "flex";
+        });
+      });
+
+      closes.forEach((close) => {
+        close.addEventListener("click", () => {
+          close.closest(".modal").style.display = "none";
+        });
+      });
+
+      window.addEventListener("click", (e) => {
+        modals.forEach((modal) => {
+          if (e.target === modal) modal.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>

@@ -25,16 +25,10 @@
       }
 
       function init() {
-        //this function will add show hide functionality to paired list items,
-        //as long as the answer is a list item straight after the question list item.
-        //You can also have as many separate lists as you want.
-        //all lists must be contained within a div with id QA
-
         var obj = document.getElementById("QA");
         var elements = obj.getElementsByTagName("li");
         var index = 1;
-        //add javascript to question elements
-        //you could also add styling to question elements here
+
         for (var i = 0; i < elements.length; i += 2) {
           var element = elements[i];
           element.innerHTML =
@@ -74,7 +68,7 @@
       </a>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
+        <a href="index.html" style="text-decoration: underline;">Home</a>
         <a href="lodging.html">Lodging</a>
         <a href="dining.html">Dining</a>
         <a href="attractions.html">Attractions</a>
@@ -102,10 +96,13 @@
       <section>
         <h2>Discover Paradise</h2>
         <p>
-          Taniti is a hidden gem in the Pacific — a land of sunshine, adventure,
-          and vibrant culture. From crystal-clear waters and lush jungles to
-          world-class cuisine, every moment on Taniti is a postcard come to
-          life.
+          Taniti is a small, tropical island in the Pacific. While the island
+          has an area of less than 500 square miles, the terrain is varied and
+          includes both sandy and rocky beaches, a small but safe harbor, lush
+          tropical rainforests, and a mountainous interior that includes a
+          small, active volcano. Taniti has an indigenous population of about
+          20,000. Until a recent increase in tourism, most the Tanitian economy
+          was dominated by fishing or agriculture.
         </p>
         <p>
           Plan your escape to paradise and experience the warmth of Taniti’s
